@@ -23,12 +23,14 @@ public class Pangram {
     return missingLetters.toString();
   }
   
-  public static void main(String args[] ) throws Exception {   
-      Scanner scan = new Scanner(System.in);
-      String line = scan.nextLine();
-      scan.close();
-      System.out.println( new Pangram().getMissingLetters(line)  );
-  }
+  /**
+   * //No requirement for stdin/stdout leaving it in only hurts code coverage %
+   * public static void main(String args[] ) throws Exception {   
+   * Scanner scan = new Scanner(System.in);
+   * String line = scan.nextLine();
+   * scan.close();
+   * System.out.println( new Pangram().getMissingLetters(line)  );
+  }**/
   
  
 }

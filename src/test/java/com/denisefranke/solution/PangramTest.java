@@ -1,6 +1,11 @@
 package com.denisefranke.solution;
  
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import org.junit.Before;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -10,11 +15,14 @@ public class PangramTest {
   private Pangram pangram;
   private final static String ALPHABET =  "abcdefghijklmnopqrstuvwxyz";
  
+  private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+  private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+
   @BeforeEach
   void init() {
 	  pangram = new Pangram();
   }
-  
+    
   @AfterEach
   void tearDown() {
     pangram = null;
@@ -83,6 +91,20 @@ public class PangramTest {
   void testPangramTest4() {
     String sentence = "CSeBBZvYvDyayyBzdfdXvaBtxxwiXcD jQADzTCXzBxzwcyxbd";
     String expected = "ghklmnopru";
+    assertEquals(expected, pangram.getMissingLetters(sentence)); 
+  }
+  
+  
+  /**
+   * Test 5) Special Characters in sentence should be ignored
+   * 		 Returns ""
+   * 
+   */
+  @DisplayName("Test Pangram Test4 - invalid test the up to 50 characters assumptions ")
+  @Test
+  void testPangramTest5() {
+	  String sentence = "Lions, and tigers, and bears, oh my! -58 ";
+	  String expected = "cfjkpquvwxz";
     assertEquals(expected, pangram.getMissingLetters(sentence)); 
   }
 
