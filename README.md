@@ -33,7 +33,7 @@ handles this case efficiently while still running very quickly on smal
 
 ## Quick start
  1. Get the Repo: 
-		```git clone git@github.com:DeniseFranke/solution.git```
+		```git clone git@github.com:DeniseFranke/label-insight-problem1.git```
  2. Import into your IDE - Menu **File –> Import –> Maven –> Existing Maven Projects**
         ```Browse to your source code location
         Click **Finish** button to finish the importing```
