@@ -1,21 +1,3 @@
-#Problem 1 ­ Missing Letters
-
-## 1. Import source code into Eclipse
-### Maven
-
-Menu **File –> Import –> Maven –> Existing Maven Projects**
-
-Browse to your source code location
-
-Click **Finish** button to finish the importing
-
-
-## 3. Run the example
-
-mvn test
-
-All the source code are described in: [JUnit 5 and Spring Boot Example](https://howtoprogram.xyz/2017/09/12/junit-5-spring-boot-example/)
-
 # Problem 1 - Pangram Utility - Missing Letters
 The sentence "A quick brown fox jumps over the lazy dog" contains every single letter in
 the alphabet. Such sentences are called pangrams. You are to write a method
@@ -50,19 +32,16 @@ handles this case efficiently while still running very quickly on smal
 - SpringBoot 1.5.9.RELEASE
 
 ## Quick start
- - Get the Repo: 
+ 1. Get the Repo: 
 		```git clone git@github.com:DeniseFranke/solution.git```
- - Import into your IDE - Menu **File –> Import –> Maven –> Existing Maven Projects**
+ 2. Import into your IDE - Menu **File –> Import –> Maven –> Existing Maven Projects**
         ```Browse to your source code location
         Click **Finish** button to finish the importing```
- - Check the versions in the pom.xml, 
+ 3. Check the versions in the pom.xml, 
 		```Update version of to match your environment or update your environment.```
- - Run the example with Junit: 
+ 4. Run the example with Junit: 
         ```mvn test```
-   Or the command line:
-        ``` javac -d ./target/classes/ src/main/java/com/denisefranke/solution/Pangram.java
-        java Pangram < "
-
+   
 ## Status
 [![Slack]](https://denisefranke/slack.com/#status)
 
