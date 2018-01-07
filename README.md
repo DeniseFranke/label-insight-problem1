@@ -71,6 +71,6 @@ Normally I would put a github releases page reference here with a discussion abo
 - [linkedin](https://www.linkedin.com/in/denisefranke)
 
 ## Copyright and license
-Code and documentation released under [MIT License] (https://github.com/DeniseFranke/master/docs/LICENSE) and copyright 2018 by @DeniseFranke
-Docs released under the Creative Commons License.
-Copyright (c) 2018 Denise Franke 
+Code and documentation released under [MIT License] (hhttps://github.com/DeniseFranke/label-insight-problem1/blob/master/LICENSE) and Copyright (c) 2018 by @DeniseFranke
+
+Docs released under the Creative Commons License and Copyright (c) 2018 by @DeniseFranke 
