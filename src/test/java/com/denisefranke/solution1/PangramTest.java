@@ -1,4 +1,4 @@
-package com.denisefranke.solution;
+package com.denisefranke.solution1;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
@@ -8,13 +8,13 @@ import org.junit.jupiter.api.Test;
 
 /**
  * PangramTest
+ * 
  * @author Denise Franke
  *
  */
 public class PangramTest {
 	private Pangram pangram;
 	private final static String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
-
 
 	@BeforeEach
 	void init() {
@@ -52,8 +52,8 @@ public class PangramTest {
 	}
 
 	/**
-	 * Test 2:  "Lions, and tigers, and bears, oh my!" Returns: "cfjkpquvwxz" Reason:
-	 * Not a Pangram
+	 * Test 2:  "Lions, and tigers, and bears, oh my!" Returns: "cfjkpquvwxz"
+	 * Reason: Not a Pangram
 	 **/
 	@DisplayName("TestPangramTest2 - invalid")
 	@Test
@@ -96,5 +96,4 @@ public class PangramTest {
 		String expected = "cfjkpquvwxz";
 		assertEquals(expected, pangram.getMissingLetters(sentence));
 	}
-
 }
